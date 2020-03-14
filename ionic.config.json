@@ -1,0 +1,7 @@
+{
+  "name": "pluto",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
