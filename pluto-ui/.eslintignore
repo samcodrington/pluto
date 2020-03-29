@@ -1,0 +1,6 @@
+# ignore build
+build/*
+
+# Potentially do this later?
+config/*
+scripts/*
