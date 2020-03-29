@@ -4,3 +4,6 @@ build/*
 # Potentially do this later?
 config/*
 scripts/*
+
+# Ignore react types for now
+src/react-app-env.d.ts
