@@ -1,5 +1,5 @@
-import { ActionFunc, Action } from "./types";
 import { Transaction } from "../models/transactions";
+import { Action } from "redux";
 //Types
 export const REQUEST_TRANSACTIONS = "REQUEST_TRANSACTIONS";
 export const RECEIVE_TRANSACTIONS = "RECEIVE_TRANSACTIONS";
@@ -30,13 +30,13 @@ export async function fetchTransactions() {
 }
 
 //Action Creators
-const requestTransactions: ActionFunc = function () {
+const requestTransactions = function () : Action {
   return {
     type: REQUEST_TRANSACTIONS,
   };
 };
 
-const receiveTransactions: ActionFunc = function () {
+const receiveTransactions = function (): Action {
   return {
     type: RECEIVE_TRANSACTIONS,
   };

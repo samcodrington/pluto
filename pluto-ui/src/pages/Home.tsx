@@ -6,7 +6,7 @@ import {
   IonToolbar,
 } from "@ionic/react";
 import React from "react";
-import ExploreContainer from "../components/ExploreContainer";
+import TableContainer from "../containers/TableContainer";
 import "./Home.css";
 
 const Home: React.FC = () => {
@@ -14,16 +14,16 @@ const Home: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Blank</IonTitle>
+          <IonTitle>Pluto</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Blank</IonTitle>
+            <IonTitle size="large">Pluto</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer />
+        <TableContainer />
       </IonContent>
     </IonPage>
   );

@@ -1,20 +1,15 @@
-import { combineReducers, Reducer } from "redux";
+import { AnyAction } from "redux";
 import {
   REQUEST_TRANSACTIONS,
   RECEIVE_TRANSACTIONS,
 } from "../actions/transactions";
 
-import { Action } from "../actions/types";
-
-const transactions: Reducer = (state: {}, action: Action) => {
+export default function(state: any, action: AnyAction) {
   switch (action.type) {
     case REQUEST_TRANSACTIONS:
     case RECEIVE_TRANSACTIONS:
+      return Object.assign({}, {state, action})
     default:
       return Object.assign({}, state);
   }
-};
-
-export default {
-  transactions,
 };
