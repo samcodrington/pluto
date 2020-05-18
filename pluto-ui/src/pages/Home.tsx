@@ -18,11 +18,6 @@ const Home: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Pluto</IonTitle>
-          </IonToolbar>
-        </IonHeader>
         <TableContainer />
       </IonContent>
     </IonPage>
