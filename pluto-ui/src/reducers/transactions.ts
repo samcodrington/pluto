@@ -4,12 +4,12 @@ import {
   RECEIVE_TRANSACTIONS,
 } from "../actions/transactions";
 
-export default function(state: any, action: AnyAction) {
+export default function (state: any, action: AnyAction) {
   switch (action.type) {
     case REQUEST_TRANSACTIONS:
     case RECEIVE_TRANSACTIONS:
-      return Object.assign({}, {state, action})
+      return Object.assign({}, { state, action });
     default:
       return Object.assign({}, state);
   }
-};
+}

@@ -6,14 +6,11 @@ export const RECEIVE_TRANSACTIONS = "RECEIVE_TRANSACTIONS";
 
 //Functions
 export async function fetchTransactions() {
-  return (
-    dispatch: //TODO replace dispatch type definition with REDUX version
-    (action: Action) => void
-  ) => {
-    dispatch(requestTransactions());
+  return (dispatch: (action: Action) => void) => {
     // get parameters from the store
     let params = {};
 
+    dispatch(requestTransactions());
     // request with params
     dispatch(receiveTransactions());
     const transactions: Transaction[] = [
@@ -30,7 +27,7 @@ export async function fetchTransactions() {
 }
 
 //Action Creators
-const requestTransactions = function () : Action {
+const requestTransactions = function (): Action {
   return {
     type: REQUEST_TRANSACTIONS,
   };

@@ -5,6 +5,7 @@ export interface Transaction {
   cat?: string;
   userId: string;
   tags?: string[];
+  acctId?: number;
 }
 
 export type TransactionType = "credit" | "debit" | "transfer";

@@ -6,8 +6,7 @@ import {
   IonToolbar,
 } from "@ionic/react";
 import React from "react";
-import TableContainer from "../containers/TableContainer";
-import "./Home.css";
+import TableContainer from "../components/table/TableContainer";
 
 const Home: React.FC = () => {
   return (
