@@ -1,7 +1,5 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
+## Pluto UI
 # dependencies
-/**/node_modules
 /.pnp
 .pnp.js
 
@@ -11,6 +9,9 @@
 # production
 /pluto-ui/build
 # /../build #maybe use this later
+
+## API
+/api/dist/
 
 # misc
 /**/.DS_Store
@@ -23,3 +24,4 @@
 /**/npm-debug.log*
 /**/yarn-debug.log*
 /**/yarn-error.log*
+/**/node_modules
