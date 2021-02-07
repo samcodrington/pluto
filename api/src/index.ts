@@ -1,14 +1,14 @@
-import express, { Application, Request, Response, NextFunction } from 'express';
+import express from 'express';
 
 // Boot express
-const app: Application = express();
+const app = express();
 app.use(express.json()) // for parsing application/json
 app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
 
-const port = 5000;
+const port = process.env.API_PORT || 5000;
 
 // Application routing
-app.use('/', (req: Request, res: Response, next: NextFunction ) => {
+app.use('/', (req, res) => {
     res.status(200).send({data: 'Hello from Pluto'});
 });
 
