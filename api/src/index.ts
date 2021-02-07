@@ -2,6 +2,9 @@ import express, { Application, Request, Response, NextFunction } from 'express';
 
 // Boot express
 const app: Application = express();
+app.use(express.json()) // for parsing application/json
+app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
+
 const port = 5000;
 
 // Application routing
