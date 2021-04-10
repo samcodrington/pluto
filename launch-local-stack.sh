@@ -1,5 +1,7 @@
 #!/bin/bash
+
 BUILD=0
+
 while getopts "bh" option;
 do 
   case $option in
@@ -20,5 +22,4 @@ then
   docker-compose build
   echo "Build complete"
 fi
-
-docker-compose up
+docker-compose --env-file .local.env --build up

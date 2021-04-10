@@ -1,13 +1,24 @@
+version: '3.8'
 services: 
   db:
     build: ./db
-    restart: always
+    volumes:
+      - db_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD}"
+      MYSQL_DATABASE: "${MYSQL_DATABSE}"
+      MYSQL_USER: "${MYSQL_USER}"
+      MYSQL_PASSWORD: "${MYSQL_PASSWORD}"
+
   backend: 
+    depends_on:
+      - db
     build: ./api
     volumes:
       - ./api/:/src/api
     ports:
-      - "3000:3000"
-    restart: always
+      - "$API_PORT:$API_PORT"
+volumes:
+  db_data: {}
 
  
