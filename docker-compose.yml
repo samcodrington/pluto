@@ -1,0 +1,13 @@
+services: 
+  db:
+    build: ./db
+    restart: always
+  backend: 
+    build: ./api
+    volumes:
+      - ./api/:/src/api
+    ports:
+      - "3000:3000"
+    restart: always
+
+ 
