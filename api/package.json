@@ -10,7 +10,7 @@
   "scriptComment": "YO, so nodemon -r isn't working rn need 2 fix l8r",
   "dependencies": {
     "express": "~4.16.1",
-    "mongoose": "^6.1.2"
+    "mongoose": "^6.4.6"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
