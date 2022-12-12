@@ -9,7 +9,7 @@
   },
   "scriptComment": "YO, so nodemon -r isn't working rn need 2 fix l8r",
   "dependencies": {
-    "express": "~4.16.1",
+    "express": "~4.18.2",
     "mongoose": "^6.1.2"
   },
   "devDependencies": {
